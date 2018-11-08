@@ -6,9 +6,9 @@ WORKDIR /opt/aws_prometheus_exporter
 
 COPY setup.py /opt/aws_prometheus_exporter/
 
-RUN pip install --upgrade setuptools
+RUN pip3 install --upgrade setuptools
 
-RUN pip install .
+RUN pip3 install .
 
 COPY aws_prometheus_exporter/*.py /opt/aws_prometheus_exporter/
 
